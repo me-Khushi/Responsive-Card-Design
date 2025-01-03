@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-color: azure;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 90%;
+        max-width: 400px;
+        border: 3px solid rgba(26, 25, 26, 0.568);
+        box-shadow: 0 0 10px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.288);
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .title {
+        text-align: center;
+        border: 2px solid rgb(24, 9, 66);
+        box-shadow: 4px 4px 10px;
+        background-color: rgba(0, 0, 0, 0.479);
+        margin-bottom: 15px;
+        padding: 12px;
+        text-shadow: 2px 2px 5px rgba(192, 192, 192, 0.514);
+        border-radius: 5px;
+      }
+      .des {
+        color: rgb(24, 9, 66);
+        margin-bottom: 20px;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+      }
+      button {
+        border: 2px solid black;
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-top: auto;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px;
+          width: 95%;
+        }
+        .title {
+          font-size: 1.2em;
+        }
+        .des {
+          font-size: 0.9em;
+        }
+        button {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Rivers</h2>
+      <p class="des">
+        Rivers are natural flowing watercourses, usually freshwater, that move
+        from higher to lower elevations, eventually emptying into a larger body
+        of water such as an ocean, sea, lake, or another river. They play an
+        essential role in shaping landscapes, supporting ecosystems, and serving
+        as vital resources for human life.
+      </p>
+      <button>Read More</button>
+    </div>
+  </body>
+</html>
